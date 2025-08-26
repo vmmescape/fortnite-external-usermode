@@ -41,7 +41,7 @@ void entities::m::execute( ) {
     entities::pointers::player_controller =  entities::pointers::local_player->controller( );
     entities::pointers::acknowledged_pawn = entities::pointers::player_controller->acknowledged_pawn( );
 
-    auto players = game_state->player_array( ).get_itter( );
+    auto players = entities::pointers::game_state->player_array( ).get_itter( );
 
     const std::size_t max_players = min( players.size( ), 200ul );
 
@@ -93,6 +93,7 @@ void entities::m::execute( ) {
 
     entities::m::entities_list = std::move( new_entities );
 }
+
 
 
 
