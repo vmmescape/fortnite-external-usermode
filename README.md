@@ -1,0 +1,1 @@
+# Fortnite Usermode ( External )  A decent Fortnite external designed for educational and research purposes.   This repo demonstrates basic usermode interaction with the game and how can it be structured cleanly.  Made this public as I’m quitting, so feel free to use or learn from it.
