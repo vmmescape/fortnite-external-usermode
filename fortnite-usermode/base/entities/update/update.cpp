@@ -76,7 +76,7 @@ void entities::m::execute( ) {
                 info.user_name = cached_name->second;
             }
             else {
-                auto name = game_state->get_user_name( state ); 
+                auto name = entities::pointers::game_state->get_user_name( state ); 
                 if ( !name.empty( ) ) {
                     entities::m::m_e_cached_names[ ( std::uintptr_t )state ] = name;
                     info.user_name = std::move( name );
@@ -93,6 +93,7 @@ void entities::m::execute( ) {
 
     entities::m::entities_list = std::move( new_entities );
 }
+
 
 
 
